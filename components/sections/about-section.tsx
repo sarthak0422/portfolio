@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { MotionSection } from "@/components/ui/motion-section";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { PROJECTS } from "@/lib/constants";
 
 export function AboutSection() {
   const containerVariants = {
@@ -69,7 +70,9 @@ export function AboutSection() {
                       </p>  
                     </div> */}
                     <div className="text-center">
-                      <h4 className="text-3xl font-bold text-primary">6+</h4>
+                      <h4 className="text-3xl font-bold text-primary">
+                        {PROJECTS.length}+
+                      </h4>
                       <p className="text-sm text-muted-foreground">
                         Projects Completed
                       </p>
