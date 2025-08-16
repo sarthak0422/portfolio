@@ -110,12 +110,12 @@ export function AboutSection() {
                 platforms.
               </motion.p>
 
-              <Tabs defaultValue="experience" className="mt-8">
+              <Tabs defaultValue="education" className="mt-8">
   <TabsList>
-    <TabsTrigger value="experience">Experience</TabsTrigger>
+    {/* <TabsTrigger value="experience">Experience</TabsTrigger> */}
     <TabsTrigger value="education">Education</TabsTrigger>
   </TabsList>
-  <TabsContent value="experience" className="mt-4">
+  {/* <TabsContent value="experience" className="mt-4">
     <div className="timeline">
       <div className="timeline-item left">
         <div className="timeline-icon">💼</div>
@@ -125,9 +125,9 @@ export function AboutSection() {
           <p>Lead frontend development for enterprise applications, focusing on performance optimization and accessibility.</p>
         </div>
       </div>
-      {/* <!-- Add more experience items as needed --> */}
+      <!-- Add more experience items as needed -->
     </div>
-  </TabsContent>
+  </TabsContent> */}
   <TabsContent value="education" className="mt-4">
     <div className="timeline">
       <div className="timeline-item left">
