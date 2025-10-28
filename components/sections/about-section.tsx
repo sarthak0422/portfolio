@@ -157,7 +157,7 @@ export function AboutSection() {
                 variants={itemVariants}
                 className="mt-8 flex flex-col sm:flex-row gap-4"
               >
-                <a href="/files/SarthakSureshTambdeResume_U.pdf" download="Sarthak_Tambde_Resume.pdf">
+                <a href="/files/SarthakSureshTambdeResume_A.pdf" download="Sarthak_Tambde_Resume.pdf">
                 <Button className="group">
                   <Download className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-1" />
                   Download Resume
