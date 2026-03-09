@@ -90,7 +90,7 @@ export const PROJECTS: Project[] = [
   tags: ["React.js", "Vite", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary", "Tailwind CSS", "Bootstrap"],
   demoUrl: "https://example.com",
   githubUrl: "https://github.com/sarthak0422/PlacementSystem"
-}
+},
   // {
   //   id: 6,
   //   title: "6",
@@ -101,7 +101,15 @@ export const PROJECTS: Project[] = [
   //   githubUrl: "https://github.com",
   // },
 
-  
+  {
+  id: 7,
+  title: "Food Delivery App",
+  description: "Food Delivery App – A Flutter app for browsing restaurants, ordering food, and managing your cart with ease.",
+  image: "assets/food_delivery_login_screen.jpg",
+  tags: ["Flutter", "Dart", "Firebase", "Food Delivery", "Mobile App", "UI/UX", "Android", "iOS", "Provider", "Cart System"],
+  demoUrl: "https://sarthakfoodeliveryapp.vercel.app/",
+  githubUrl: "https://github.com/sarthak0422/Food_Delivery_App.git",
+}
 
 
 
