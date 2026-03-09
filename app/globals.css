@@ -182,6 +182,23 @@
   }
 }
 
+/* Phone Mockup */
+
+.phone-frame {
+  width: 375px;          /* iPhone width */
+  height: 667px;         /* iPhone height */
+  border: 16px solid #333;
+  border-radius: 36px;
+  overflow: hidden;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  background: #000;
+}
+
+.phone-frame iframe {
+  width: 100%;
+  height: 100%;
+}
+
 
 @layer base {
   * {

@@ -21,6 +21,9 @@ import { PROJECTS } from "@/lib/constants";
 export function ProjectsSection() {
   const [selectedId, setSelectedId] = useState<number | null>(null);
 
+  const [showPhone, setShowPhone] = useState(false);
+  const [phoneProjectUrl, setPhoneProjectUrl] = useState<string | null>(null);
+
   const selectedProject = PROJECTS.find((project) => project.id === selectedId);
 
   return (
@@ -86,23 +89,28 @@ export function ProjectsSection() {
                   </div>
                 </CardContent>
                 <CardFooter className="flex justify-between">
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="gap-1"
-                    asChild
-                  >
-                    <Link href={project.demoUrl} target="_blank">
+                  {project.tags.includes("Flutter") ? (
+                    <Button
+                      variant="ghost"
+                      size="sm"
+                      className="gap-1"
+                      onClick={() => {
+                        setPhoneProjectUrl(project.demoUrl);
+                        setShowPhone(true);
+                      }}
+                    >
                       <Eye className="h-4 w-4" />
                       Demo
-                    </Link>
-                  </Button>
-                  <Button
-                    variant="ghost"
-                    size="sm"
-                    className="gap-1"
-                    asChild
-                  >
+                    </Button>
+                  ) : (
+                    <Button variant="ghost" size="sm" className="gap-1" asChild>
+                      <Link href={project.demoUrl} target="_blank">
+                        <Eye className="h-4 w-4" />
+                        Demo
+                      </Link>
+                    </Button>
+                  )}
+                  <Button variant="ghost" size="sm" className="gap-1" asChild>
                     <Link href={project.githubUrl} target="_blank">
                       <Github className="h-4 w-4" />
                       Code
@@ -187,12 +195,23 @@ export function ProjectsSection() {
                     ))}
                   </div>
                   <div className="flex gap-4">
-                    <Button asChild>
-                      <Link href={selectedProject.demoUrl} target="_blank">
+                    {selectedProject.tags.includes("Flutter") ? (
+                      <Button
+                        variant="ghost"
+                        size="sm"
+                        onClick={() => setShowPhone(true)}
+                      >
                         <Eye className="mr-2 h-4 w-4" />
                         View Demo
-                      </Link>
-                    </Button>
+                      </Button>
+                    ) : (
+                      <Button asChild>
+                        <Link href={selectedProject.demoUrl} target="_blank">
+                          <Eye className="mr-2 h-4 w-4" />
+                          View Demo
+                        </Link>
+                      </Button>
+                    )}
                     <Button variant="outline" asChild>
                       <Link href={selectedProject.githubUrl} target="_blank">
                         <Code2 className="mr-2 h-4 w-4" />
@@ -201,6 +220,64 @@ export function ProjectsSection() {
                     </Button>
                   </div>
                 </div>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+
+        {/* Phone Mockup Modal */}
+        <AnimatePresence>
+          {showPhone && selectedProject && (
+            <motion.div
+              className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowPhone(false)}
+            >
+              <motion.div
+                className="phone-frame bg-black relative"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <iframe
+                  src={selectedProject.demoUrl}
+                  frameBorder="0"
+                  className="w-full h-full"
+                />
+                <button
+                  onClick={() => setShowPhone(false)}
+                  className="absolute top-2 right-2 text-white text-xl z-10"
+                >
+                  ✕
+                </button>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
+        <AnimatePresence>
+          {showPhone && phoneProjectUrl && (
+            <motion.div
+              className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4 backdrop-blur-sm"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              onClick={() => setShowPhone(false)}
+            >
+              <motion.div
+                className="phone-frame bg-black relative"
+                onClick={(e) => e.stopPropagation()}
+              >
+                <iframe
+                  src={phoneProjectUrl}
+                  frameBorder="0"
+                  className="w-full h-full"
+                />
+                <button
+                  onClick={() => setShowPhone(false)}
+                  className="absolute top-2 right-2 text-white text-xl z-10"
+                >
+                  ✕
+                </button>
               </motion.div>
             </motion.div>
           )}
