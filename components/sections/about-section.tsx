@@ -97,7 +97,7 @@ export function AboutSection() {
                 variants={itemVariants}
                 className="text-muted-foreground mb-6"
               >
-               🚀I'm a final-year IT student with a passion for creating real-world solutions using web and mobile development. Having hands-on experience with React, Flutter, and Python, I've crafted full-stack applications ranging from eCommerce sites to AI tools and secure blockchain applications. I live to solve real-world problems using technology and enjoy transforming ideas into meaningful, user-friendly apps. Connect with me and let's create together! 🌍💡
+               Full Stack Software Developer skilled in building scalable web and mobile applications using React.js, Node.js, and Firebase. Experienced in cross-platform development with Flutter and implementing AI-based features. Passionate about developing high-performance, user-centric applications.
               </motion.p>
 
               <motion.p
@@ -135,16 +135,16 @@ export function AboutSection() {
         <div className="timeline-content">
           <h3 className="font-semibold text-lg">B.Tech in Information Technology</h3>
           <p className="timeline-date">Mumbai University • 2022 - 2025</p>
-          <p>Specialized in Flutter Interaction and Web Technologies.</p>
+          {/* <p> Flutter and Web Technologies.</p> */}
         </div>
       </div>
 
       <div className="timeline-item right">
-        <div className="timeline-icon">🎓</div>
+        <div className="timeline-icon">📜</div>
         <div className="timeline-content">
           <h3 className="font-semibold text-lg">Diploma in Information Technology</h3>
           <p className="timeline-date">MSBTE • 2019 - 2022</p>
-          <p>Specialized in Flutter Interaction and Web Technologies.</p>
+          {/* <p>Specialized in Flutter Interaction and Web Technologies.</p> */}
         </div>
       </div>
       {/* <!-- Add more education items as needed --> */}
@@ -157,7 +157,7 @@ export function AboutSection() {
                 variants={itemVariants}
                 className="mt-8 flex flex-col sm:flex-row gap-4"
               >
-                <a href="/files/Sarthak_Suresh_Tambde_ResumeA.pdf" download="Sarthak_Tambde_Resume.pdf">
+                <a href="/files/Sarthak_Suresh_Tambde_ResumeA.pdf" download="Sarthak_Suresh_Tambde_Resume.pdf">
                 <Button className="group">
                   <Download className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-1" />
                   Download Resume

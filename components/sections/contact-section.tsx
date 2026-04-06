@@ -19,7 +19,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { toast } from "sonner";
-import { Mail, MapPin, Phone, Send } from "lucide-react";
+import { Instagram, Mail, MapPin, Phone, Send } from "lucide-react";
 
 const formSchema = z.object({
   name: z.string().min(2, { message: "Name must be at least 2 characters." }),
@@ -60,6 +60,14 @@ export function ContactSection() {
   }
 
   const contactInfo = [
+
+    {
+      icon: Instagram,
+      title: "Instagram",
+      content: "@sarthak_0422",
+      href: "https://www.instagram.com/sarthak_0422/",
+    },
+
     {
       icon: Mail,
       title: "Email",
