@@ -42,7 +42,7 @@ export function AboutSection() {
             >
               <div className="relative overflow-hidden rounded-xl aspect-square">
                 <Image
-                  src="/assets/sarthaktambde.jpg" 
+                  src="/assets/sarthaktambde.jpg"
                   alt="Sarthak Tambde"
                   width={500}
                   height={500}
@@ -97,7 +97,11 @@ export function AboutSection() {
                 variants={itemVariants}
                 className="text-muted-foreground mb-6"
               >
-               Full Stack Software Developer skilled in building scalable web and mobile applications using React.js, Node.js, and Firebase. Experienced in cross-platform development with Flutter and implementing AI-based features. Passionate about developing high-performance, user-centric applications.
+                Full Stack Software Developer skilled in building scalable web
+                and mobile applications using React.js, Node.js, and Firebase.
+                Experienced in cross-platform development with Flutter and
+                implementing AI-based features. Passionate about developing
+                high-performance, user-centric applications.
               </motion.p>
 
               <motion.p
@@ -105,17 +109,17 @@ export function AboutSection() {
                 className="text-muted-foreground mb-6"
               >
                 My approach combines technical expertise with creative
-                problem-solving to deliver solutions that not only look great but
-                also perform exceptionally well across all devices and
+                problem-solving to deliver solutions that not only look great
+                but also perform exceptionally well across all devices and
                 platforms.
               </motion.p>
 
               <Tabs defaultValue="education" className="mt-8">
-  <TabsList>
-    {/* <TabsTrigger value="experience">Experience</TabsTrigger> */}
-    <TabsTrigger value="education">Education</TabsTrigger>
-  </TabsList>
-  {/* <TabsContent value="experience" className="mt-4">
+                <TabsList>
+                  {/* <TabsTrigger value="experience">Experience</TabsTrigger> */}
+                  <TabsTrigger value="education">Education</TabsTrigger>
+                </TabsList>
+                {/* <TabsContent value="experience" className="mt-4">
     <div className="timeline">
       <div className="timeline-item left">
         <div className="timeline-icon">💼</div>
@@ -128,40 +132,45 @@ export function AboutSection() {
       <!-- Add more experience items as needed -->
     </div>
   </TabsContent> */}
-  <TabsContent value="education" className="mt-4">
-    <div className="timeline">
-      <div className="timeline-item left">
-        <div className="timeline-icon">🎓</div>
-        <div className="timeline-content">
-          <h3 className="font-semibold text-lg">B.Tech in Information Technology</h3>
-          <p className="timeline-date">Mumbai University • 2022 - 2025</p>
-          {/* <p> Flutter and Web Technologies.</p> */}
-        </div>
-      </div>
+                <TabsContent value="education" className="mt-4">
+                  <div className="timeline">
+                    <div className="timeline-item left">
+                      <div className="timeline-icon">🎓</div>
+                      <div className="timeline-content">
+                        <h3 className="font-semibold text-lg">
+                          B.Tech in Information Technology
+                        </h3>
+                        <p className="timeline-date">
+                          Mumbai University • 2022 - 2025
+                        </p>
+                        {/* <p> Flutter and Web Technologies.</p> */}
+                      </div>
+                    </div>
 
-      <div className="timeline-item right">
-        <div className="timeline-icon">📜</div>
-        <div className="timeline-content">
-          <h3 className="font-semibold text-lg">Diploma in Information Technology</h3>
-          <p className="timeline-date">MSBTE • 2019 - 2022</p>
-          {/* <p>Specialized in Flutter Interaction and Web Technologies.</p> */}
-        </div>
-      </div>
-      {/* <!-- Add more education items as needed --> */}
-    </div>
-  </TabsContent>
-</Tabs>
-
+                    <div className="timeline-item right">
+                      <div className="timeline-icon">📜</div>
+                      <div className="timeline-content">
+                        <h3 className="font-semibold text-lg">
+                          Diploma in Information Technology
+                        </h3>
+                        <p className="timeline-date">MSBTE • 2019 - 2022</p>
+                        {/* <p>Specialized in Flutter Interaction and Web Technologies.</p> */}
+                      </div>
+                    </div>
+                    {/* <!-- Add more education items as needed --> */}
+                  </div>
+                </TabsContent>
+              </Tabs>
 
               <motion.div
                 variants={itemVariants}
                 className="mt-8 flex flex-col sm:flex-row gap-4"
               >
-                <a href="/files/Sarthak_Tambde_Resume_OL.pdf" download="Sarthak_Suresh_Tambde_Resume.pdf">
-                <Button className="group">
-                  <Download className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-1" />
-                  Download Resume
-                </Button>
+                <a href="/api/download-resume">
+                  <Button className="group">
+                    <Download className="mr-2 h-4 w-4 transition-transform group-hover:-translate-y-1" />
+                    Download Resume
+                  </Button>
                 </a>
               </motion.div>
             </motion.div>
