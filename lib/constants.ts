@@ -63,15 +63,15 @@ export const PROJECTS: Project[] = [
     githubUrl:
       "https://github.com/sarthak0422/Blockchain-based-File-Storage-main.git",
   },
-  // {
-  //   id: 3,
-  //   title: "PumpkinAI Personal Assistant",
-  //   description: "It is a personal assistant that helps you with your daily tasks, reminders, and scheduling, using AI to enhance productivity.",
-  //   image: "/assets/pumpkinai.png",
-  //   tags: ["Python", "Google_Studio", "PyQT6","Elevenlabs", "OpenAI",],
-  //   demoUrl: "https://example.com",
-  //   githubUrl: "https://github.com",
-  // },
+  {
+    id: 3,
+    title: "🎃 PumpkinAI: Voice-Activated Intelligent Assistant",
+    description: "PumpkinAI is a sleek desktop assistant with a futuristic dark, pumpkin-orange design that combines local system control with advanced AI. It lets you use voice or text to open apps, search the web, manage tasks, and chat intelligently using Google’s Gemini model—all in a fast, smooth, non-blocking experience.",
+    image: "/assets/pumpkinai.png",
+    tags: ["Python", "Google_Studio", "PyQT6", "pyttsx3",],
+    demoUrl: "https://sarthak0422.github.io/PumpkinAi/",
+    githubUrl: "https://github.com/sarthak0422/PumpkinAi.git",
+  },
   {
     id: 4,
     title: "Weather App",
