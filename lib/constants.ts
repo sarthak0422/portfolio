@@ -109,7 +109,17 @@ export const PROJECTS: Project[] = [
   tags: ["Flutter", "Dart", "Firebase", "Food Delivery", "Mobile App", "UI/UX", "Android", "iOS", "Provider", "Cart System"],
   demoUrl: "https://sarthakfoodeliveryapp.vercel.app/",
   githubUrl: "https://github.com/sarthak0422/Food_Delivery_App.git",
-}
+},
+
+{
+  id: 8,
+  title: "Mango Store",
+  description: "Mango Store – A React app for browsing and purchasing fresh mangoes with ease.",
+  image: "assets/mango_store.jpg",
+  tags: ["React", "Vite", "Firebase", "E-commerce", "Tailwind CSS", "Provider", "Cart System", "Razorpay"],
+  demoUrl: "https://sarthaktambde.vercel.app/",
+  githubUrl: "https://github.com/sarthak0422/Mango_Store.git",
+},
 
 
 
