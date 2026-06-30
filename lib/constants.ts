@@ -51,18 +51,18 @@ export const PROJECTS: Project[] = [
     demoUrl: "https://halloweenk.vercel.app/",
     githubUrl: "https://github.com/sarthak0422/React_Ecommerce_Website.git",
   },
-  {
-    id: 2,
-    title: "Decentralized File Storage",
-    description:
-      "Smart task management app that uses AI to prioritize and categorize tasks, with team collaboration features.",
-    image: "/assets/decenteralizedfilestorage.png",
-    tags: ["Python", "Html", "CSS", "SQLite", "Flask"],
-    demoUrl:
-      "https://sarthak0422.github.io/Blockchain-based-File-Storage-main/",
-    githubUrl:
-      "https://github.com/sarthak0422/Blockchain-based-File-Storage-main.git",
-  },
+  // {
+  //   id: 2,
+  //   title: "Decentralized File Storage",
+  //   description:
+  //     "Smart task management app that uses AI to prioritize and categorize tasks, with team collaboration features.",
+  //   image: "/assets/decenteralizedfilestorage.png",
+  //   tags: ["Python", "Html", "CSS", "SQLite", "Flask"],
+  //   demoUrl:
+  //     "https://sarthak0422.github.io/Blockchain-based-File-Storage-main/",
+  //   githubUrl:
+  //     "https://github.com/sarthak0422/Blockchain-based-File-Storage-main.git",
+  // },
   {
     id: 3,
     title: "🎃 PumpkinAI: Voice-Activated Intelligent Assistant",
@@ -115,7 +115,7 @@ export const PROJECTS: Project[] = [
   id: 8,
   title: "Mango Store",
   description: "A premium React-based e-commerce platform designed for browsing and purchasing fresh mangoes with seamless user experience.",
-  image: "assets/mango_store.png",
+  image: "assets/mango-store.png",
   tags: ["React", "Vite", "Firebase", "E-commerce", "Tailwind CSS", "Provider", "Cart System", "Razorpay"],
   demoUrl: "https://sarthaktambde.vercel.app/",
   githubUrl: "https://github.com/sarthak0422/Mango_Store.git",
