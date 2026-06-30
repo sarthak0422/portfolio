@@ -116,8 +116,8 @@ export const PROJECTS: Project[] = [
   title: "Mango Store",
   description: "A premium React-based e-commerce platform designed for browsing and purchasing fresh mangoes with seamless user experience.",
   image: "assets/mango-store.png",
-  tags: ["React", "Vite", "Firebase", "E-commerce", "Tailwind CSS", "Provider", "Cart System", "Razorpay"],
-  demoUrl: "https://sarthaktambde.vercel.app/",
+  tags: ["React", "Vite", "Zustand" , "Firebase", "E-commerce", "Tailwind CSS", "Provider", "Cart System", "Razorpay"],
+  demoUrl: "https://mangoostore.vercel.app/",
   githubUrl: "https://github.com/sarthak0422/Mango_Store.git",
 },
 
