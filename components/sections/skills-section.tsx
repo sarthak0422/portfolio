@@ -36,7 +36,7 @@ export function SkillsSection() {
     return SKILLS.filter((skill) => skill.category === category);
   };
 
-  const categories = ["frontend", "backend", "design", "tools", "ai"];
+  const categories = ["frontend", "backend", "design", "tools", "ai", "devops"];
 
   return (
     <MotionSection id="skills" className="py-20">
@@ -52,7 +52,7 @@ export function SkillsSection() {
         </div>
 
         <Tabs defaultValue="frontend" className="max-w-3xl mx-auto">
-          <TabsList className="grid grid-cols-5 mb-8">
+          <TabsList className="grid grid-cols-6 mb-8">
             {categories.map((cat) => (
               <TabsTrigger key={cat} value={cat}>
                 {cat.charAt(0).toUpperCase() + cat.slice(1)}

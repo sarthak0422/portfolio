@@ -19,8 +19,10 @@ import {
   SiElevenlabs,
   SiGithubcopilot,
   SiSaturn,
+  SiMysql,
+  SiDocker,
 } from "react-icons/si";
-import { FaCode, FaHeart, FaRobot, FaTools } from "react-icons/fa";
+import { FaCode, FaHeart, } from "react-icons/fa";
 import { GiSpermWhale } from "react-icons/gi";
 
 export type Project = {
@@ -37,7 +39,7 @@ export type Skill = {
   name: string;
   icon: React.ElementType;
   level?: number;
-  category: "frontend" | "backend" | "design" | "tools" | "ai";
+  category: "frontend" | "backend" | "design" | "tools" | "ai"| "devops";
 };
 
 export const PROJECTS: Project[] = [
@@ -136,6 +138,7 @@ export const SKILLS: Skill[] = [
 
   // Backend
   { name: "MongoDB", icon: SiMongodb, category: "backend" },
+  { name: "SQL", icon: SiMysql, category: "backend" },
   { name: "Firebase", icon: SiFirebase, category: "backend" },
   { name: "PHP", icon: SiPhp, category: "backend" },
   { name: "Node.js", icon: SiNodedotjs, category: "backend" },
@@ -160,4 +163,9 @@ export const SKILLS: Skill[] = [
   { name: "Copilot", icon: SiGithubcopilot, category: "ai" },
   { name: "Grok", icon: SiSaturn, category: "ai" },
   { name: "Elevenlabs", icon: SiElevenlabs, category: "ai" },
+
+  //DevOps
+  { name: "Docker", icon: SiDocker, category: "devops" },
+
+
 ];
