@@ -21,6 +21,8 @@ import {
   SiSaturn,
   SiMysql,
   SiDocker,
+  SiPostgresql,
+  SiClaude,
 } from "react-icons/si";
 import { FaCode, FaHeart, } from "react-icons/fa";
 import { GiSpermWhale } from "react-icons/gi";
@@ -138,7 +140,7 @@ export const SKILLS: Skill[] = [
 
   // Backend
   { name: "MongoDB", icon: SiMongodb, category: "backend" },
-  { name: "SQL", icon: SiMysql, category: "backend" },
+  { name: "SQL", icon: SiPostgresql, category: "backend" },
   { name: "Firebase", icon: SiFirebase, category: "backend" },
   { name: "PHP", icon: SiPhp, category: "backend" },
   { name: "Node.js", icon: SiNodedotjs, category: "backend" },
@@ -156,13 +158,14 @@ export const SKILLS: Skill[] = [
   // AI
   { name: "ChatGPT", icon: SiOpenai, category: "ai" },
   { name: "Gemini", icon: SiGoogle, category: "ai" },
-  { name: "Google AI Studio", icon: SiGoogle, category: "ai" },
-  { name: "Lovable", icon: FaHeart, category: "ai" },
-  { name: "DeepSeek", icon: GiSpermWhale, category: "ai" },
-  { name: "Gamma", icon: SiGoogle, category: "ai" },
+  { name: "Claude", icon: SiClaude, category: "ai" },
   { name: "Copilot", icon: SiGithubcopilot, category: "ai" },
-  { name: "Grok", icon: SiSaturn, category: "ai" },
-  { name: "Elevenlabs", icon: SiElevenlabs, category: "ai" },
+  { name: "Google AI Studio", icon: SiGoogle, category: "ai" },
+  // { name: "Lovable", icon: FaHeart, category: "ai" },
+  // { name: "DeepSeek", icon: GiSpermWhale, category: "ai" },
+  // { name: "Gamma", icon: SiGoogle, category: "ai" },
+  // { name: "Grok", icon: SiSaturn, category: "ai" },
+  // { name: "Elevenlabs", icon: SiElevenlabs, category: "ai" },
 
   //DevOps
   { name: "Docker", icon: SiDocker, category: "devops" },

@@ -88,7 +88,7 @@ export function SkillsSection() {
           ))}
         </Tabs>
 
-        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        {/* <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <div className="bg-card border border-border rounded-lg p-6">
             <h3 className="text-xl font-semibold mb-4">
               Development Approach
@@ -189,7 +189,7 @@ export function SkillsSection() {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
     </MotionSection>
   );

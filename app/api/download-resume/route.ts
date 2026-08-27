@@ -4,7 +4,7 @@ import path from "path";
 
 export async function GET() {
   // 1. Locate the file on the server
-  const filePath = path.join(process.cwd(), "public/files/Sarthak_Tambde_Resume_OL.pdf");
+  const filePath = path.join(process.cwd(), "public/files/Sarthak_Suresh_Tambde_Resume_.pdf");
   
   // 2. Read the file into memory
   const fileBuffer = fs.readFileSync(filePath);

@@ -83,12 +83,12 @@ export function Footer() {
             <div className="mt-4 md:mt-0">
               <ul className="flex space-x-6 text-sm">
                 <li>
-                  <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link href="/privacy-page" className="text-muted-foreground hover:text-primary transition-colors">
                     Privacy Policy
                   </Link>
                 </li>
                 <li>
-                  <Link href="#" className="text-muted-foreground hover:text-primary transition-colors">
+                  <Link href="/terms-page" className="text-muted-foreground hover:text-primary transition-colors">
                     Terms of Service
                   </Link>
                 </li>
