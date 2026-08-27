@@ -118,7 +118,7 @@ export const PROJECTS: Project[] = [
   image: "assets/mango-store.png",
   tags: ["React", "Vite", "Zustand" , "Firebase", "E-commerce", "Tailwind CSS", "Provider", "Cart System", "Razorpay"],
   demoUrl: "https://mangoostore.vercel.app/",
-  githubUrl: "https://github.com/sarthak0422/Mango_Store.git",
+  githubUrl: "https://github.com/sarthak0422/mango-store.git",
 },
 
 
